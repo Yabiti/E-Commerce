@@ -57,4 +57,23 @@ li{
 a{
     text-decoration: none;
     color: black;
+    font-weight: bold;
+}
+
+img{
+    width: 100%;
+}
+
+#header{
+    padding-top: 250px;
+    margin-left: 50px;
+    line-height:1.5;
+}
+
+.p{
+    font-weight: bold;
+}
+
+.color{
+    color:  #008080;
 }
