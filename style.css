@@ -17,20 +17,18 @@ html {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 2rem;
-  color: #1a1a1a;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 2.2rem;
+  color: #1c1c1e;
 }
 
 .logo .icon {
-  font-size: 2.2rem;
-}
-
-.logo .text {
-  letter-spacing: 1px;
+  font-size: 2.4rem;
 }
 
 .logo .highlight {
-  color: #0070f3; /* Bright blue or use #ff4d4f for red */
+  color: #ff6b6b; /* Coral Red */
+  font-weight: 700;
 }
+
