@@ -244,3 +244,17 @@ a{
   transform: scale(1.02);
 }
 
+.repair {
+    position: relative;
+    width: 100%;
+    height: 70vh; /* Covers 70% of the viewport */
+    background-image: url('co.png'); /* Add your background */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers vertically */
+    align-items: center; /* Centers horizontally */
+    text-align: center;
+    color: white;
+}
