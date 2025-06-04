@@ -110,10 +110,3 @@ products.forEach((product, index) => {
     otherRows.appendChild(productCard);
   }
 });
-
-function renderProducts(){
-    let visibleCount = 0
-
-    let products = visibleCount.sclice(0, visibleCount)
-
-}
