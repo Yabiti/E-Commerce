@@ -239,8 +239,8 @@ a{
 }
 
 #loadMore:hover {
-  background-color: teal; /* Changes to teal on hover */
-  color: white; /* Keeps text white */
-  transform: scale(1.02); /* Subtle hover effect */
+  background-color: teal;
+  color: white;
+  transform: scale(1.02);
 }
 
