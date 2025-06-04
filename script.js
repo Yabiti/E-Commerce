@@ -1,16 +1,38 @@
 const products = [
-  // Add as many as you want
-  { title: 'Adidas',
-     frontImage: 'images/lady.jpeg',
-      backImage: 'images/lady.jpg',
-       stars: '★★★★☆'
+    { 
+        title: 'Adidas',
+        frontImage: 'images/lady.jpeg',
+        backImage: 'images/lady.jpg',
+        stars: '★★★★☆'
     },
-  { title: 'Nike', frontImage: 'images/nike-front.jpg', backImage: 'images/nike-back.jpg', stars: '★★★★★' },
-  { title: 'Puma', frontImage: 'images/puma-front.jpg', backImage: 'images/puma-back.jpg', stars: '★★★☆☆' },
-  { title: 'Reebok', frontImage: 'images/reebok-front.jpg', backImage: 'images/reebok-back.jpg', stars: '★★★★☆' },
-  { title: 'Jordan', frontImage: 'images/jordan-front.jpg', backImage: 'images/jordan-back.jpg', stars: '★★★★★' },
-  { title: 'Converse', frontImage: 'images/converse-front.jpg', backImage: 'images/converse-back.jpg', stars: '★★★☆☆' },
-  // etc...
+   { 
+        title: 'Nike',
+        frontImage: 'images/nike-front.jpg',
+        backImage: 'images/nike-back.jpg',
+        stars: '★★★★★' 
+    },
+   {
+        title: 'Puma',
+        frontImage: 'images/puma-front.jpg',
+        backImage: 'images/puma-back.jpg',
+        stars: '★★★☆☆'
+    },
+   { 
+        title: 'Reebok',
+        frontImage: 'images/reebok-front.jpg',
+        backImage: 'images/reebok-back.jpg',
+        stars: '★★★★☆' 
+    },
+   { 
+    title: 'Jordan',
+    frontImage: 'images/jordan-front.jpg',
+    backImage: 'images/jordan-back.jpg',
+    stars: '★★★★★' },
+   {
+    title: 'Converse',
+    frontImage: 'images/converse-front.jpg',
+    backImage: 'images/converse-back.jpg',
+    stars: '★★★☆☆' },
 ];
 
 const firstRow = document.getElementById('first-row');
