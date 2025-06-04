@@ -222,20 +222,20 @@ a{
 }
 
 #loadMore {
-  padding: 12px 40px; /* Makes it wide but slightly lower in height */
-  background-color: black; /* Default black background */
-  color: white; /* White text */
+  padding: 12px 40px;
+  background-color: black; 
+  color: white;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
-  font-size: 16px; /* Slightly smaller text */
+  font-size: 16px;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.2s ease-in-out;
   display: block;
   width: fit-content;
-  margin: 20px auto; /* Center alignment */
+  margin: 20px auto;
   text-align: center;
-  cursor: pointer; /* Clickable effect */
-  border: none; /* Removes default button styling */
+  cursor: pointer;
+  border: none;
 }
 
 #loadMore:hover {
