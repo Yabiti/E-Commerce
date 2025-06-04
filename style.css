@@ -63,14 +63,31 @@ a{
 .ai {
   width: 100%;
   padding-top: 27px;
+  height: 700px;
 }
 
 
 
-#header{
-    margin-top: -550px;
-    padding-left: 50px;
-    line-height:1.5;
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 700px;
+}
+
+#header {
+  position: absolute;
+  top: 150px; /* adjust as needed */
+  left: 50px;
+  color: black;
+  line-height: 1.5;
+}
+
+.featured-products {
+  width: 100%;
+  display: block;
+  padding: 40px 60px;
+  background-color: #f9f9f9;
+  clear: both;
 }
 
 
