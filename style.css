@@ -157,24 +157,22 @@ a{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
   margin-bottom: 30px;
 }
 
 .product-card {
-  width: 220px;
+  width: 300px;
   background-color: white;
   border: 1px solid #ddd;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   overflow: hidden;
-  text-align: center;
   font-family: 'Inter', sans-serif;
   transition: transform 0.3s ease;
-  margin: 20px auto;
+  margin: 40px;
 }
 
-/* 👇 Only pad the bottom text */
 .product-info {
   padding: 15px;
 }
@@ -183,7 +181,6 @@ a{
   transform: translateY(-5px);
 }
 
-/* Image swap */
 .image-container {
   position: relative;
   width: 100%;

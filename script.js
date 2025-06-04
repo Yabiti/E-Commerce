@@ -1,38 +1,60 @@
 const products = [
     { 
         title: 'Adidas',
-        frontImage: 'images/lady.jpeg',
-        backImage: 'images/lady.jpg',
-        stars: '★★★★☆'
+        frontImage: 'adiddas.jpg',
+        backImage: 'adiddas1.jpg',
+        stars: '★★★★☆',
+        price: '100$'
     },
    { 
         title: 'Nike',
-        frontImage: 'images/nike-front.jpg',
-        backImage: 'images/nike-back.jpg',
-        stars: '★★★★★' 
+        frontImage: 'nike.jpg',
+        backImage: 'nike1.jpg',
+        stars: '★★★★★',
+        price: '20$' 
     },
    {
-        title: 'Puma',
-        frontImage: 'images/puma-front.jpg',
-        backImage: 'images/puma-back.jpg',
-        stars: '★★★☆☆'
+        title: 'T-shirt',
+        frontImage: 'tshirt.jpg',
+        backImage: 'tshirt1.jpg',
+        stars: '★★★☆☆',
+        price:'$100'
+    },
+    { 
+        title: 'Jacket',
+        frontImage: 'jacket.jpg',
+        backImage: 'jacket1.jpg',
+        stars: '★★★★☆',
+        price: '50$'
     },
    { 
-        title: 'Reebok',
-        frontImage: 'images/reebok-front.jpg',
-        backImage: 'images/reebok-back.jpg',
-        stars: '★★★★☆' 
+        title: 'Jordan',
+        frontImage: 'jordan-front.jpg',
+        backImage: 'jordan-back.jpg',
+        stars: '★★★★★',
+        price: '250$'
     },
-   { 
-    title: 'Jordan',
-    frontImage: 'images/jordan-front.jpg',
-    backImage: 'images/jordan-back.jpg',
-    stars: '★★★★★' },
    {
     title: 'Converse',
-    frontImage: 'images/converse-front.jpg',
-    backImage: 'images/converse-back.jpg',
-    stars: '★★★☆☆' },
+    frontImage: 'converse.jpg',
+    backImage: 'converse1.jpg',
+    stars: '★★★☆☆',
+    price: '8$'
+    },
+     { 
+        title: 'Jacket',
+        frontImage: 'jacket.jpg',
+        backImage: 'jacket1.jpg',
+        stars: '★★★★☆',
+        price: '50$'
+    },
+     { 
+        title: 'Jacket',
+        frontImage: 'jacket.jpg',
+        backImage: 'jacket1.jpg',
+        stars: '★★★★☆',
+        price: '50$'
+    },
 ];
 
 const firstRow = document.getElementById('first-row');
@@ -69,8 +91,14 @@ products.forEach((product, index) => {
   stars.className = 'stars';
   stars.textContent = product.stars;
 
+  const price = document.createElement('div');
+  price.className = 'price';
+  price.textContent = product.price;
+
+
   infoDiv.appendChild(title);
   infoDiv.appendChild(stars);
+  infoDiv.appendChild(price);
 
   productCard.appendChild(imageContainer);
   productCard.appendChild(infoDiv);
