@@ -57,59 +57,6 @@ const products = [
     },
 ];
 
-const firstRow = document.getElementById('first-row');
-
-products.forEach((product, index) => {
-  const productCard = document.createElement('div');
-  productCard.className = 'product-card';
-
-  const imageContainer = document.createElement('div');
-  imageContainer.className = 'image-container';
-
-  const frontImg = document.createElement('img');
-  frontImg.src = product.frontImage;
-  frontImg.alt = 'Front';
-  frontImg.className = 'front-image';
-
-  const backImg = document.createElement('img');
-  backImg.src = product.backImage;
-  backImg.alt = 'Back';
-  backImg.className = 'back-image';
-
-  imageContainer.appendChild(frontImg);
-  imageContainer.appendChild(backImg);
-
-  const infoDiv = document.createElement('div');
-  infoDiv.className = 'product-info';
-
-  const title = document.createElement('h1');
-  title.className = 'product-title';
-  title.textContent = product.title;
-
-  const stars = document.createElement('div');
-  stars.className = 'stars';
-  stars.textContent = product.stars;
-
-  const price = document.createElement('div');
-  price.className = 'price';
-  price.textContent = product.price;
-
-
-  infoDiv.appendChild(title);
-  infoDiv.appendChild(stars);
-  infoDiv.appendChild(price);
-
-  productCard.appendChild(imageContainer);
-  productCard.appendChild(infoDiv);
-
-  // Append to first row or others
-  if (index < 4) {
-    firstRow.appendChild(productCard);
-  } else {
-    otherRows.appendChild(productCard);
-  }
-});
-
 let visibleCount = 4;
 
 const container = document.getElementById('product-container');
@@ -174,5 +121,4 @@ document.getElementById('loadMore').addEventListener('click', () => {
   renderProducts();
 });
 
-// Initial render
 renderProducts();
