@@ -222,23 +222,25 @@ a{
 }
 
 #loadMore {
-  padding: 15px 30px; /* Bigger button */
-  background-color: darkcyan; /* Default color */
-  color: white;
+  padding: 12px 40px; /* Makes it wide but slightly lower in height */
+  background-color: black; /* Default black background */
+  color: white; /* White text */
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
-  font-size: 18px; /* Larger text */
-  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  font-size: 16px; /* Slightly smaller text */
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.2s ease-in-out;
   display: block;
   width: fit-content;
-  margin: 20px auto; /* Centers the button */
+  margin: 20px auto; /* Center alignment */
   text-align: center;
   cursor: pointer; /* Clickable effect */
+  border: none; /* Removes default button styling */
 }
 
 #loadMore:hover {
   background-color: teal; /* Changes to teal on hover */
-  transform: scale(1.05); /* Slightly enlarges for a smooth effect */
+  color: white; /* Keeps text white */
+  transform: scale(1.02); /* Subtle hover effect */
 }
 
