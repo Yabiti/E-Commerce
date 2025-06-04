@@ -58,7 +58,6 @@ const products = [
 ];
 
 const firstRow = document.getElementById('first-row');
-const otherRows = document.getElementById('other-rows');
 
 products.forEach((product, index) => {
   const productCard = document.createElement('div');
@@ -111,9 +110,12 @@ products.forEach((product, index) => {
   }
 });
 
+let visibleCount = 4;
+
+const container = document.getElementById('product-container');
+
 function renderProducts() {
-  const container = document.getElementById('product-container'); // Could be firstRow or a new unified container
-  container.innerHTML = ''; // Clear previous cards
+  container.innerHTML = '';
 
   const visibleProducts = products.slice(0, visibleCount);
 
@@ -166,3 +168,11 @@ function renderProducts() {
     document.getElementById('loadMore').style.display = 'none';
   }
 }
+
+document.getElementById('loadMore').addEventListener('click', () => {
+  visibleCount += 4;
+  renderProducts();
+});
+
+// Initial render
+renderProducts();
