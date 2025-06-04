@@ -220,3 +220,25 @@ a{
   font-size: 18px;
   margin-top: 5px;
 }
+
+#loadMore {
+  padding: 15px 30px; /* Bigger button */
+  background-color: darkcyan; /* Default color */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px; /* Larger text */
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  display: block;
+  width: fit-content;
+  margin: 20px auto; /* Centers the button */
+  text-align: center;
+  cursor: pointer; /* Clickable effect */
+}
+
+#loadMore:hover {
+  background-color: teal; /* Changes to teal on hover */
+  transform: scale(1.05); /* Slightly enlarges for a smooth effect */
+}
+
