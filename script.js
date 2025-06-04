@@ -110,3 +110,59 @@ products.forEach((product, index) => {
     otherRows.appendChild(productCard);
   }
 });
+
+function renderProducts() {
+  const container = document.getElementById('product-container'); // Could be firstRow or a new unified container
+  container.innerHTML = ''; // Clear previous cards
+
+  const visibleProducts = products.slice(0, visibleCount);
+
+  visibleProducts.forEach((product) => {
+    const productCard = document.createElement('div');
+    productCard.className = 'product-card';
+
+    const imageContainer = document.createElement('div');
+    imageContainer.className = 'image-container';
+
+    const frontImg = document.createElement('img');
+    frontImg.src = product.frontImage;
+    frontImg.alt = 'Front';
+    frontImg.className = 'front-image';
+
+    const backImg = document.createElement('img');
+    backImg.src = product.backImage;
+    backImg.alt = 'Back';
+    backImg.className = 'back-image';
+
+    imageContainer.appendChild(frontImg);
+    imageContainer.appendChild(backImg);
+
+    const infoDiv = document.createElement('div');
+    infoDiv.className = 'product-info';
+
+    const title = document.createElement('h1');
+    title.className = 'product-title';
+    title.textContent = product.title;
+
+    const stars = document.createElement('div');
+    stars.className = 'stars';
+    stars.textContent = product.stars;
+
+    const price = document.createElement('div');
+    price.className = 'price';
+    price.textContent = product.price;
+
+    infoDiv.appendChild(title);
+    infoDiv.appendChild(stars);
+    infoDiv.appendChild(price);
+
+    productCard.appendChild(imageContainer);
+    productCard.appendChild(infoDiv);
+
+    container.appendChild(productCard);
+  });
+
+  if (visibleCount >= products.length) {
+    document.getElementById('loadMore').style.display = 'none';
+  }
+}
