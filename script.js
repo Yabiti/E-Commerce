@@ -171,3 +171,5 @@ document.getElementById('loadMore').addEventListener('click', () => {
   visibleCount += 4;
   renderProducts();
 });
+
+renderProducts();
