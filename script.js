@@ -1,13 +1,13 @@
 const products = [
   {
     title: 'Adidas',
-    frontImage: 'images/lady.jpeg',
-    backImage: 'images/lady.jpg',
+    frontImage: 'lady.jpeg',
+    backImage: 'lady.jpg',
     stars: '★★★★☆'
   },
   {
     title: 'Nike',
-    frontImage: 'images/nike-front.jpg',
+    frontImage: 'lady.jpeg',
     backImage: 'images/nike-back.jpg',
     stars: '★★★★★'
   },
