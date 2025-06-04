@@ -90,6 +90,11 @@ a{
   clear: both;
 }
 
+.feature{
+  text-align: center;
+  padding: 30px;
+}
+
 
 .btn {
   padding: 10px 20px;
@@ -114,20 +119,36 @@ a{
     color:  #008080;
 }
 
-#tshirtImage {
-    transition: opacity 0.4s ease-in-out;
-}
-
 .image-container {
-    overflow: hidden; /* Prevents overflow */
-    width: 200px;
-    height: 300px;
+  position: relative;
+  width: 200px;
+  height: 300px;
+  overflow: hidden;
 }
 
 .image-container img {
-    transition: transform 0.5s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.4s ease-in-out;
 }
 
-.image-container:hover img {
-    transform: translateY(-50px); /* Moves image up while swapping */
+.back-image {
+  opacity: 0;
+}
+
+.image-container:hover .back-image {
+  opacity: 1;
+}
+
+.image-container:hover .front-image {
+  opacity: 0;
+}
+
+.stars {
+  color: gold;
+  font-size: 24px;
 }
