@@ -60,15 +60,34 @@ a{
     font-weight: bold;
 }
 
-img{
-    width: 100%;
+.ai {
+  width: 100%;
+  padding-top: 27px;
 }
 
+
+
 #header{
-    padding-top: 250px;
-    margin-left: 50px;
+    margin-top: -550px;
+    padding-left: 50px;
     line-height:1.5;
 }
+
+
+.btn {
+  padding: 10px 20px;
+  background-color: teal;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: darkcyan;
+}
+
 
 .p{
     font-weight: bold;
@@ -76,4 +95,22 @@ img{
 
 .color{
     color:  #008080;
+}
+
+#tshirtImage {
+    transition: opacity 0.4s ease-in-out;
+}
+
+.image-container {
+    overflow: hidden; /* Prevents overflow */
+    width: 200px;
+    height: 300px;
+}
+
+.image-container img {
+    transition: transform 0.5s ease-in-out;
+}
+
+.image-container:hover img {
+    transform: translateY(-50px); /* Moves image up while swapping */
 }
