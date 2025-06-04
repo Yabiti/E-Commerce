@@ -166,3 +166,8 @@ function renderProducts() {
     document.getElementById('loadMore').style.display = 'none';
   }
 }
+
+document.getElementById('loadMore').addEventListener('click', () => {
+  visibleCount += 4;
+  renderProducts();
+});
