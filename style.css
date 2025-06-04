@@ -153,6 +153,13 @@ a{
   font-size: 24px;
 }
 
+.products-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
 
 .product-card {
   width: 220px;
