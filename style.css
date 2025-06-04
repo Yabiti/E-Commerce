@@ -153,6 +153,15 @@ a{
   font-size: 24px;
 }
 
+#products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* center cards horizontally */
+  gap: 20px; /* spacing between cards */
+  padding: 20px;
+}
+
+
 .product-card {
   width: 220px;
   background-color: white;

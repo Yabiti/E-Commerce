@@ -16,6 +16,18 @@ const products = [
     frontImage: 'images/puma-front.jpg',
     backImage: 'images/puma-back.jpg',
     stars: '★★★☆☆'
+  },
+    {
+    title: 'Puma',
+    frontImage: 'images/puma-front.jpg',
+    backImage: 'images/puma-back.jpg',
+    stars: '★★★☆☆'
+  },
+    {
+    title: 'Puma',
+    frontImage: 'images/puma-front.jpg',
+    backImage: 'images/puma-back.jpg',
+    stars: '★★★☆☆'
   }
 ];
 
