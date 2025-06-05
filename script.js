@@ -1,125 +1,98 @@
-const products = [
-    { 
-        title: 'Adidas',
-        frontImage: 'adiddas.jpg',
-        backImage: 'adiddas1.jpg',
-        stars: '★★★★☆',
-        price: '100$'
-    },
-   { 
-        title: 'Nike',
-        frontImage: 'nike.jpg',
-        backImage: 'nike1.jpg',
-        stars: '★★★★★',
-        price: '20$' 
-    },
-   {
-        title: 'T-shirt',
-        frontImage: 'tshirt.jpg',
-        backImage: 'tshirt1.jpg',
-        stars: '★★★☆☆',
-        price:'$100'
-    },
-    { 
-        title: 'Jacket',
-        frontImage: 'jacket.jpg',
-        backImage: 'jacket1.jpg',
-        stars: '★★★★☆',
-        price: '50$'
-    },
-   { 
-        title: 'Jordan',
-        frontImage: 'jordan-front.jpg',
-        backImage: 'jordan-back.jpg',
-        stars: '★★★★★',
-        price: '250$'
-    },
-   {
-    title: 'Converse',
-    frontImage: 'converse.jpg',
-    backImage: 'converse1.jpg',
-    stars: '★★★☆☆',
-    price: '8$'
-    },
-     { 
-        title: 'Jacket',
-        frontImage: 'jacket.jpg',
-        backImage: 'jacket1.jpg',
-        stars: '★★★★☆',
-        price: '50$'
-    },
-     { 
-        title: 'Jacket',
-        frontImage: 'jacket.jpg',
-        backImage: 'jacket1.jpg',
-        stars: '★★★★☆',
-        price: '50$'
-    },
+// Featured Products
+const featuredProducts = [
+      { title: 'Adidas', frontImage: 'adiddas.jpg', backImage: 'adiddas1.jpg', stars: '★★★★☆', price: '100$' },
+    { title: 'Nike', frontImage: 'nike.jpg', backImage: 'nike1.jpg', stars: '★★★★★', price: '20$' },
+    { title: 'T-shirt', frontImage: 'tshirt.jpg', backImage: 'tshirt1.jpg', stars: '★★★☆☆', price: '$100' },
+    { title: 'Jacket', frontImage: 'jacket.jpg', backImage: 'jacket1.jpg', stars: '★★★★☆', price: '50$' },
+    { title: 'Jordan', frontImage: 'jordan-front.jpg', backImage: 'jordan-back.jpg', stars: '★★★★★', price: '250$' },
+    { title: 'Converse', frontImage: 'converse.jpg', backImage: 'converse1.jpg', stars: '★★★☆☆', price: '8$' }
 ];
 
-let visibleCount = 4;
+const newarrivals = [
+    { title: 'T-shirt', frontImage: 'tshirt.jpg', backImage: 'tshirt1.jpg', stars: '★★★☆☆', price: '$100' },
+    { title: 'Jacket', frontImage: 'jacket.jpg', backImage: 'jacket1.jpg', stars: '★★★★☆', price: '50$' },
+    { title: 'Jordan', frontImage: 'jordan-front.jpg', backImage: 'jordan-back.jpg', stars: '★★★★★', price: '250$' },
+    { title: 'Converse', frontImage: 'converse.jpg', backImage: 'converse1.jpg', stars: '★★★☆☆', price: '8$' },
+    { title: 'Adidas', frontImage: 'adiddas.jpg', backImage: 'adiddas1.jpg', stars: '★★★★☆', price: '100$' },
+    { title: 'Nike', frontImage: 'nike.jpg', backImage: 'nike1.jpg', stars: '★★★★★', price: '20$' }
+];
 
-const container = document.getElementById('product-container');
+let visibleFeatured = 4;
 
-function renderProducts() {
-  container.innerHTML = '';
+const featuredContainer = document.getElementById('product-container');
+const loadMoreButtons = document.querySelectorAll('#loadMore');
+const featuredLoadBtn = loadMoreButtons[0]; // First #loadMore button
 
-  const visibleProducts = products.slice(0, visibleCount);
+function renderFeaturedProducts() {
+  featuredContainer.innerHTML = '';
+  const visibleItems = featuredProducts.slice(0, visibleFeatured);
 
-  visibleProducts.forEach((product) => {
-    const productCard = document.createElement('div');
-    productCard.className = 'product-card';
-
-    const imageContainer = document.createElement('div');
-    imageContainer.className = 'image-container';
-
-    const frontImg = document.createElement('img');
-    frontImg.src = product.frontImage;
-    frontImg.alt = 'Front';
-    frontImg.className = 'front-image';
-
-    const backImg = document.createElement('img');
-    backImg.src = product.backImage;
-    backImg.alt = 'Back';
-    backImg.className = 'back-image';
-
-    imageContainer.appendChild(frontImg);
-    imageContainer.appendChild(backImg);
-
-    const infoDiv = document.createElement('div');
-    infoDiv.className = 'product-info';
-
-    const title = document.createElement('h1');
-    title.className = 'product-title';
-    title.textContent = product.title;
-
-    const stars = document.createElement('div');
-    stars.className = 'stars';
-    stars.textContent = product.stars;
-
-    const price = document.createElement('div');
-    price.className = 'price';
-    price.textContent = product.price;
-
-    infoDiv.appendChild(title);
-    infoDiv.appendChild(stars);
-    infoDiv.appendChild(price);
-
-    productCard.appendChild(imageContainer);
-    productCard.appendChild(infoDiv);
-
-    container.appendChild(productCard);
+  visibleItems.forEach(product => {
+    const card = document.createElement('div');
+    card.className = 'product-card';
+    card.innerHTML = `
+      <div class="image-container">
+        <img src="${product.frontImage}" class="front-image" alt="Front">
+        <img src="${product.backImage}" class="back-image" alt="Back">
+      </div>
+      <div class="product-info">
+        <h1 class="product-title">${product.title}</h1>
+        <div class="stars">${product.stars}</div>
+        <div class="price">${product.price}</div>
+      </div>
+    `;
+    featuredContainer.appendChild(card);
   });
 
-  if (visibleCount >= products.length) {
-    document.getElementById('loadMore').style.display = 'none';
+  if (visibleFeatured >= featuredProducts.length) {
+    featuredLoadBtn.style.display = 'none';
   }
 }
 
-document.getElementById('loadMore').addEventListener('click', () => {
-  visibleCount += 4;
-  renderProducts();
+featuredLoadBtn.addEventListener('click', () => {
+  visibleFeatured += 4;
+  renderFeaturedProducts();
 });
 
-renderProducts();
+renderFeaturedProducts();
 
+
+// New Arrivals Section
+const newArrivals = [/* your new arrivals array */];
+let visibleArrival = 4;
+
+const arrivalContainer = document.getElementById('arrival-container');
+const arrivalLoadBtn = document.getElementById('loadMoreArrival');
+
+function renderArrivals() {
+  arrivalContainer.innerHTML = '';
+  const visibleItems = newArrivals.slice(0, visibleArrival);
+
+  visibleItems.forEach(product => {
+    const card = document.createElement('div');
+    card.className = 'product-card';
+    card.innerHTML = `
+      <div class="image-container">
+        <img src="${product.frontImage}" class="front-image" alt="Front">
+        <img src="${product.backImage}" class="back-image" alt="Back">
+      </div>
+      <div class="product-info">
+        <h1 class="product-title">${product.title}</h1>
+        <div class="stars">${product.stars}</div>
+        <div class="price">${product.price}</div>
+      </div>
+    `;
+    arrivalContainer.appendChild(card);
+  });
+
+  if (visibleArrival >= newArrivals.length) {
+    arrivalLoadBtn.style.display = 'none';
+  }
+}
+
+arrivalLoadBtn.addEventListener('click', () => {
+  visibleArrival += 4;
+  renderArrivals();
+});
+
+renderArrivals();
