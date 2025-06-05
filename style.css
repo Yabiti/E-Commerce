@@ -290,11 +290,30 @@ a{
 }
 
 .png{
-  height: 600px;
-  width: 800px;
+  height: 500px;
+  width: 750px;
   padding: 30px;
 }
 
 .make{
   display: flex;
+  margin: 50px;
+}
+
+
+.make1{
+  display: flex;
+  padding: 50px;
+}
+
+.png1{
+  height: 250px;
+  width: 400px;
+  margin: 30px;
+}
+
+.png2{
+  height: 250px;
+  width: 500px;
+  margin: 30px;
 }
