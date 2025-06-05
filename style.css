@@ -317,3 +317,46 @@ a{
   width: 500px;
   margin: 30px;
 }
+
+.container{
+  padding-left: 130px;
+}
+
+.season{
+  margin-top: -200px;
+  color: white;
+  font-size: 50px;
+}
+
+.z{
+  color: white;
+}
+
+.containers{
+  padding-left: 600px;
+}
+
+.seasonal{
+  margin-top: -90px;
+  color: white;
+  font-size: 50px;
+}
+
+.z{
+  color: white;
+}
+
+.containerss{
+  text-align: right;
+  padding-right: 120px;
+}
+
+.seasonall{
+  margin-top: -60px;
+  color: white;
+  font-size: 40px;
+}
+
+.z{
+  color: white;
+}
