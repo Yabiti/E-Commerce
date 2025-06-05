@@ -264,3 +264,27 @@ a{
   text-align: center;
   padding: 50px;
 }
+
+
+#loadMoreArrival {
+  padding: 12px 40px;
+  background-color: black; 
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+}
+
+#loadMoreArrival:hover {
+  background-color: teal;
+  color: white;
+  transform: scale(1.02);
+}
