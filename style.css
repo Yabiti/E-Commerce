@@ -290,11 +290,12 @@ a{
 }
 
 .make{
-  padding: 60px;
+  padding: 20px;
+  display: flex;
 }
 .png{
-  height: 500px;
-  width: 600px;
+  height: 400px;
+  width: 700px;
 }
 
 .learnmore{
@@ -308,13 +309,26 @@ a{
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.2s ease-in-out;
   display: block;
   width: fit-content;
-  margin: 20px auto;
   cursor: pointer;
   border: none;
+  top: -130px;
+  position: relative;
+  margin-left: 80px;
 }
 
 .learnmore:hover {
   background-color: teal;
   color: white;
   transform: scale(1.02);
+}
+
+.make1{
+  margin: 40px;
+}
+
+.up{
+  text-align: right;
+  top: -200px;
+  position: relative;
+  padding-right: 50px;
 }
