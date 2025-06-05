@@ -294,3 +294,7 @@ a{
   width: 800px;
   padding: 30px;
 }
+
+.make{
+  display: flex;
+}
