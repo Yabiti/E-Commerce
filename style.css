@@ -377,3 +377,19 @@ a{
   top: -170px;
   position: relative;
 }
+
+.seasons{
+  top: -100px;
+  position: relative;
+  padding-left: 50px;
+  color: #f9f9f9;
+}
+
+.footer{
+  background-color:  #002147;
+  color: #e3e6f3;
+  padding: 60px;
+  line-height: 30px;
+  top: -200px;
+  position: relative;
+}
