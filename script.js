@@ -78,7 +78,12 @@ const newArrivals = [
       stars: '★★★☆☆',
       price: '8$'
     },
-    { title: 'Adidas', frontImage: 'adiddas.jpg', backImage: 'adiddas1.jpg', stars: '★★★★☆', price: '100$' },
+    { title: 'Adidas',
+      frontImage: 'adiddas.jpg',
+      backImage: 'adiddas1.jpg',
+      stars: '★★★★☆',
+      price: '100$'
+    },
     { title: 'Nike', frontImage: 'nike.jpg', backImage: 'nike1.jpg', stars: '★★★★★', price: '20$' }
 ];
 
