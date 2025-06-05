@@ -360,3 +360,20 @@ a{
 .z{
   color: white;
 }
+
+.footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #e7e7e7;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content p {
+    color: #555;
+    margin: 5px 0;
+}
+
+.footer-content strong {
+    color: #333;
+}
