@@ -122,3 +122,5 @@ document.getElementById('loadMore').addEventListener('click', () => {
 });
 
 renderProducts();
+
+
