@@ -57,7 +57,13 @@ const newArrivals = [
       stars: '★★★☆☆',
       price: '$100'
     },
-    { title: 'Jacket', frontImage: 'jacket.jpg', backImage: 'jacket1.jpg', stars: '★★★★☆', price: '50$' },
+    { 
+      title: 'Jacket',
+      frontImage: 'jacket.jpg',
+      backImage: 'jacket1.jpg',
+      stars: '★★★★☆',
+      price: '50$'
+    },
     { title: 'Jordan', frontImage: 'jordan-front.jpg', backImage: 'jordan-back.jpg', stars: '★★★★★', price: '250$' },
     { title: 'Converse', frontImage: 'converse.jpg', backImage: 'converse1.jpg', stars: '★★★☆☆', price: '8$' },
     { title: 'Adidas', frontImage: 'adiddas.jpg', backImage: 'adiddas1.jpg', stars: '★★★★☆', price: '100$' },
