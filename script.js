@@ -8,14 +8,6 @@ const featuredProducts = [
     { title: 'Converse', frontImage: 'converse.jpg', backImage: 'converse1.jpg', stars: '★★★☆☆', price: '8$' }
 ];
 
-const newarrivals = [
-    { title: 'T-shirt', frontImage: 'tshirt.jpg', backImage: 'tshirt1.jpg', stars: '★★★☆☆', price: '$100' },
-    { title: 'Jacket', frontImage: 'jacket.jpg', backImage: 'jacket1.jpg', stars: '★★★★☆', price: '50$' },
-    { title: 'Jordan', frontImage: 'jordan-front.jpg', backImage: 'jordan-back.jpg', stars: '★★★★★', price: '250$' },
-    { title: 'Converse', frontImage: 'converse.jpg', backImage: 'converse1.jpg', stars: '★★★☆☆', price: '8$' },
-    { title: 'Adidas', frontImage: 'adiddas.jpg', backImage: 'adiddas1.jpg', stars: '★★★★☆', price: '100$' },
-    { title: 'Nike', frontImage: 'nike.jpg', backImage: 'nike1.jpg', stars: '★★★★★', price: '20$' }
-];
 
 let visibleFeatured = 4;
 
@@ -58,7 +50,15 @@ renderFeaturedProducts();
 
 
 // New Arrivals Section
-const newArrivals = [/* your new arrivals array */];
+const newArrivals = [
+    { title: 'T-shirt', frontImage: 'tshirt.jpg', backImage: 'tshirt1.jpg', stars: '★★★☆☆', price: '$100' },
+    { title: 'Jacket', frontImage: 'jacket.jpg', backImage: 'jacket1.jpg', stars: '★★★★☆', price: '50$' },
+    { title: 'Jordan', frontImage: 'jordan-front.jpg', backImage: 'jordan-back.jpg', stars: '★★★★★', price: '250$' },
+    { title: 'Converse', frontImage: 'converse.jpg', backImage: 'converse1.jpg', stars: '★★★☆☆', price: '8$' },
+    { title: 'Adidas', frontImage: 'adiddas.jpg', backImage: 'adiddas1.jpg', stars: '★★★★☆', price: '100$' },
+    { title: 'Nike', frontImage: 'nike.jpg', backImage: 'nike1.jpg', stars: '★★★★★', price: '20$' }
+];
+
 let visibleArrival = 4;
 
 const arrivalContainer = document.getElementById('arrival-container');
