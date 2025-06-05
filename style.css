@@ -288,3 +288,9 @@ a{
   color: white;
   transform: scale(1.02);
 }
+
+.png{
+  height: 600px;
+  width: 800px;
+  padding: 30px;
+}
