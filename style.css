@@ -357,3 +357,23 @@ a{
   transform: scale(1.02);
 }
 
+.images{
+  height: 200px;
+  width: 450px;
+}
+
+.card-row{
+  display: flex;
+  padding: 60px;
+  gap: 50px;
+}
+
+.imagess{
+  width: 490px;
+  height: 200px;
+}
+
+.make2{
+  top: -170px;
+  position: relative;
+}
