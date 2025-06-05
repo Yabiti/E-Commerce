@@ -84,7 +84,13 @@ const newArrivals = [
       stars: '★★★★☆',
       price: '100$'
     },
-    { title: 'Nike', frontImage: 'nike.jpg', backImage: 'nike1.jpg', stars: '★★★★★', price: '20$' }
+    { 
+      title: 'Nike',
+      frontImage: 'nike.jpg',
+      backImage: 'nike1.jpg',
+      stars: '★★★★★',
+      price: '20$'
+    }
 ];
 
 let visibleArrival = 4;
