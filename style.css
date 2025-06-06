@@ -439,5 +439,11 @@ a{
   padding-left: 300px;
   top: -30px;
   position: relative;
-  line-height: 40px;
+  line-height: 50px;
+}
+
+.team{
+  text-align: center;
+  top: -30px;
+  position: relative;
 }
