@@ -444,6 +444,12 @@ a{
 
 .team{
   text-align: center;
-  top: -30px;
+;  top: -50px;
+  position: relative
+}
+
+.team1{
+  text-align: left;
+  top: -50px;
   position: relative;
 }
