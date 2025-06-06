@@ -436,4 +436,8 @@ a{
 }
 
 .mission{
+  padding-left: 300px;
+  top: -30px;
+  position: relative;
+  line-height: 40px;
 }
