@@ -429,3 +429,8 @@ a{
 .signup-button:hover {
   background-color: #006d6d;
 }
+
+.about{
+  text-align: center;
+  padding: 100px;
+}
