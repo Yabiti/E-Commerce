@@ -5,7 +5,8 @@ const featuredProducts = [
       frontImage: 'adiddas.jpg',
       backImage: 'adiddas1.jpg',
       stars: '★★★★☆',
-      price: '100$'
+      price: '100$',
+      shop: 'shop now'
     },
     { title: 'Nike',
       frontImage: 'nike.jpg',
@@ -62,6 +63,7 @@ function renderFeaturedProducts() {
         <h1 class="product-title">${product.title}</h1>
         <div class="stars">${product.stars}</div>
         <div class="price">${product.price}</div>
+        <div class="price">${product.shop}</div>
       </div>
     `;
     featuredContainer.appendChild(card);
