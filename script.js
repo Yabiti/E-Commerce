@@ -161,6 +161,9 @@ function renderArrivals() {
         <h1 class="product-title">${product.title}</h1>
         <div class="stars">${product.stars}</div>
         <div class="price">${product.price}</div>
+        <div class="shop-link">
+            ${product.shop ? `<a href="shop.html">Shop now</a>` : ''}
+        </div>
       </div>
     `;
     arrivalContainer.appendChild(card);
