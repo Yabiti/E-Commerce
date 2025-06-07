@@ -466,8 +466,6 @@ a{
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
-  text-align: right;
-  position: relative;
   transition: background-color 0.3s ease;
 }
 
