@@ -96,41 +96,47 @@ const newArrivals = [
       frontImage: 'tshirt.jpg',
       backImage: 'tshirt1.jpg',
       stars: '★★★☆☆',
-      price: '$100'
+      price: '$100',
+      shop: 'Shop Now'
     },
     { 
       title: 'Jacket',
       frontImage: 'jacket.jpg',
       backImage: 'jacket1.jpg',
       stars: '★★★★☆',
-      price: '50$'
+      price: '50$',
+      shop: 'Shop Now'
     },
     { 
       title: 'Jordan',
       frontImage: 'jordan-front.jpg',
       backImage: 'jordan-back.jpg',
       stars: '★★★★★',
-      price: '250$'
+      price: '250$',
+      shop: 'Shop Now'
     },
     { 
       title: 'Converse',
       frontImage: 'converse.jpg',
       backImage: 'converse1.jpg',
       stars: '★★★☆☆',
-      price: '8$'
+      price: '8$',
+      shop: 'Shop Now'
     },
     { title: 'Adidas',
       frontImage: 'adiddas.jpg',
       backImage: 'adiddas1.jpg',
       stars: '★★★★☆',
-      price: '100$'
+      price: '100$',
+      shop: 'Shop Now'
     },
     { 
       title: 'Nike',
       frontImage: 'nike.jpg',
       backImage: 'nike1.jpg',
       stars: '★★★★★',
-      price: '20$'
+      price: '20$',
+      shop: 'Shop  Now'
     }
 ];
 
