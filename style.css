@@ -93,7 +93,8 @@ a{
 
 .feature{
   text-align: center;
-  padding: 50px;
+  padding:0px;
+  font-size: 25px;
 }
 
 
@@ -264,7 +265,8 @@ a{
 
 .new-arrivals{
   text-align: center;
-  padding: 50px;
+  padding: 70px;
+  font-size: 25px;
 }
 
 
