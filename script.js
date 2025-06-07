@@ -70,7 +70,7 @@ function renderFeaturedProducts() {
         <div class="stars">${product.stars}</div>
         <div class="price">${product.price}</div>
         <div class="shop-link">
-            ${product.shop ? `<a href="shop.html">Shop now</a>` : ''}
+            ${product.shop ? `<a href="shop.html?product=${encodeURIComponent(product.title)}">Shop now</a>` : ''}
         </div>
       </div>
     `;
@@ -162,9 +162,8 @@ function renderArrivals() {
         <div class="stars">${product.stars}</div>
         <div class="price">${product.price}</div>
         <div class="shop-link">
-            ${product.shop ? `<a href="shop.html">Shop now</a>` : ''}
+          ${product.shop ? `<a href="shop.html?product=${encodeURIComponent(product.title)}">Shop now</a>` : ''}
         </div>
-      </div>
     `;
     arrivalContainer.appendChild(card);
   });
@@ -180,3 +179,79 @@ arrivalLoadBtn.addEventListener('click', () => {
 });
 
 renderArrivals();
+
+  const params = new URLSearchParams(window.location.search);
+  const productName = params.get('product');
+
+  const products = [
+    { 
+      title: 'Adidas',
+      frontImage: 'adiddas.jpg',
+      backImage: 'adiddas1.jpg',
+      stars: '★★★★☆',
+      price: '100$',
+      description: 'Comfortable Adidas shoes with premium design.'
+    },
+    {
+      title: 'Nike',
+      frontImage: 'nike.jpg',
+      backImage: 'nike1.jpg',
+      stars: '★★★★★',
+      price: '20$',
+      description: 'Stylish Nike shoes, perfect for sports and casual wear.'
+    },
+    {
+      title: 'T-shirt',
+      frontImage: 'tshirt.jpg',
+      backImage: 'tshirt1.jpg',
+      stars: '★★★☆☆',
+      price: '$100',
+      description: 'Soft cotton T-shirt with modern fit.'
+    },
+    {
+      title: 'Jacket',
+      frontImage: 'jacket.jpg',
+      backImage: 'jacket1.jpg',
+      stars: '★★★★☆',
+      price: '50$',
+      description: 'Warm, stylish jacket for everyday wear.'
+    },
+    {
+      title: 'Jordan',
+      frontImage: 'jordan-front.jpg',
+      backImage: 'jordan-back.jpg',
+      stars: '★★★★★',
+      price: '250$',
+      description: 'Premium Jordan shoes, iconic and bold.'
+    },
+    {
+      title: 'Converse',
+      frontImage: 'converse.jpg',
+      backImage: 'converse1.jpg',
+      stars: '★★★☆☆',
+      price: '8$',
+      description: 'Classic Converse for every style.'
+    }
+  ];
+
+  const detailContainer = document.getElementById('product-detail');
+
+  if (productName) {
+    const product = products.find(p => p.title === productName);
+
+    if (product) {
+      detailContainer.innerHTML = `
+        <h2>${product.title}</h2>
+        <div class="image-container">
+          <img src="${product.frontImage}" alt="${product.title}" style="width: 300px;">
+          <img src="${product.backImage}" alt="${product.title} back" style="width: 300px;">
+        </div>
+        <p>Rating: ${product.stars}</p>
+        <p>Price: ${product.price}</p>
+        <p>Description: ${product.description}</p>
+        <a href="index.html">← Back to shop</a>
+      `;
+    } else {
+      detailContainer.textContent = 'Product not found.';
+    }
+  }
