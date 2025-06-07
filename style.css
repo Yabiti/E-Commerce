@@ -461,14 +461,16 @@ a{
   display: inline-block;
   margin-top: 10px;
   padding: 8px 16px;
-  background-color: #007bff;
+  background-color: black;
   color: white;
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
+  text-align: right;
+  position: relative;
   transition: background-color 0.3s ease;
 }
 
 .shop-link a:hover {
-  background-color: #0056b3;
+  background-color: black;
 }
