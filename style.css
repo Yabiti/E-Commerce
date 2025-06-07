@@ -102,6 +102,7 @@ a{
   background-color: teal;
   color: white;
   text-decoration: none;
+  line-height: 50px;
   border-radius: 5px;
   font-weight: bold;
   transition: 0.3s;
@@ -471,4 +472,15 @@ a{
 
 .shop-link a:hover {
   background-color: black;
+}
+
+.product-detail {
+  position: fixed;
+  top: 20%;
+  left: 30%;
+  background: #fff;
+  padding: 20px;
+  border: 2px solid #ddd;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  z-index: 999;
 }

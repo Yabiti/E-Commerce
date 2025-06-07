@@ -6,42 +6,48 @@ const featuredProducts = [
       backImage: 'adiddas1.jpg',
       stars: '★★★★☆',
       price: '100$',
-      shop: 'Shop Now'
+      shop: 'Shop Now',
+       id: 'adidas',
     },
     { title: 'Nike',
       frontImage: 'nike.jpg',
       backImage: 'nike1.jpg',
       stars: '★★★★★',
       price: '20$',
-      shop: "Shop Now"
+      shop: "Shop Now",
+       id: 'nike',
     },
     { title: 'T-shirt',
       frontImage: 'tshirt.jpg',
       backImage: 'tshirt1.jpg',
       stars: '★★★☆☆',
       price: '$100',
-      shop: 'Shop Now'
+      shop: 'Shop Now',
+       id: 'T-shirt',
     },
     { title: 'Jacket',
       frontImage: 'jacket.jpg',
       backImage: 'jacket1.jpg',
       stars: '★★★★☆',
       price: '50$',
-      shop: 'Shop Now'
+      shop: 'Shop Now',
+       id: 'jacket',
     },
     { title: 'Jordan',
       frontImage: 'jordan-front.jpg',
       backImage: 'jordan-back.jpg',
       stars: '★★★★★',
       price: '250$',
-      shop: 'Shop Now'
+      shop: 'Shop Now',
+      id: 'jordan',
     },
     { title: 'Converse',
       frontImage: 'converse.jpg',
       backImage: 'converse1.jpg',
       stars: '★★★☆☆',
       price: '8$',
-      shop: 'Shop Now'
+      shop: 'Shop Now',
+      id: 'converse',
 
     }
 ];
@@ -70,8 +76,9 @@ function renderFeaturedProducts() {
         <div class="stars">${product.stars}</div>
         <div class="price">${product.price}</div>
         <div class="shop-link">
-            ${product.shop ? `<a href="shop.html">Shop now</a>` : ''}
+            ${product.shop ? `<a href="shop.html?productId=${product.id}">${product.shop}</a>` : ''}
         </div>
+
       </div>
     `;
     featuredContainer.appendChild(card);
@@ -136,7 +143,7 @@ const newArrivals = [
       backImage: 'nike1.jpg',
       stars: '★★★★★',
       price: '20$',
-      shop: 'Shop  Now'
+      shop: 'Shop Now'
     }
 ];
 
@@ -161,7 +168,10 @@ function renderArrivals() {
         <h1 class="product-title">${product.title}</h1>
         <div class="stars">${product.stars}</div>
         <div class="price">${product.price}</div>
-        <a href="shop.html?product=${encodeURIComponent(product.title)}">Shop now</a>
+        <div class="shop-link">
+            ${product.shop ? `<a href="shop.html?productId=${product.id}">${product.shop}</a>` : ''}
+        </div>
+
       </div>
     `;
     arrivalContainer.appendChild(card);
@@ -178,3 +188,32 @@ arrivalLoadBtn.addEventListener('click', () => {
 });
 
 renderArrivals();
+
+
+const params = new URLSearchParams(window.location.search);
+const selectedId = params.get('productId');
+const allProducts = [...featuredProducts, ...newArrivals];
+const product = allProducts.find(p => p.id === selectedId);
+
+if (product) {
+  showProductDetails(product);
+}
+function showProductDetails(product) {
+  const detailDiv = document.createElement('div');
+  detailDiv.className = 'product-detail';
+  detailDiv.innerHTML = `
+    <h2>${product.title}</h2>
+    <img src="${product.frontImage}" alt="${product.title}" style="width:200px;">
+    <p><strong>Price:</strong> ${product.price}</p>
+    <p><strong>Rating:</strong> ${product.stars}</p>
+    <button onclick="document.querySelector('.product-detail').remove()">Close</button>
+  `;
+  document.body.appendChild(detailDiv);
+}
+
+if (selectedId) {
+  const product = [...featuredProducts, ...newArrivals].find(p => p.id === selectedId);
+  if (product) {
+    showProductDetails(product); // you’ll define this
+  }
+}
