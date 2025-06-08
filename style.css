@@ -93,7 +93,7 @@ a{
 
 .feature{
   text-align: center;
-  padding:0px;
+  padding:50px;
   font-size: 25px;
 }
 
@@ -389,7 +389,7 @@ a{
   color: #f9f9f9;
 }
 
-.footer{
+.email-link{
   background-color:  #002147;
   color: #e3e6f3;
   padding: 60px;
@@ -486,3 +486,57 @@ a{
   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
   z-index: 999;
 }
+
+.footer-bottom{
+  text-align: center;
+  display: grid;
+  line-height: 20px;
+  top: -50px;
+  position: relative;
+  line-height: 30px;
+}
+
+.footer-bottom a {
+  font-weight: normal;
+}
+
+
+.logo-bottom {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #1c1c1e;
+  padding: 20px;
+  padding-left: 70px;
+  margin-top: 10px;
+  margin-top: -5px;
+}
+
+.logo .icon {
+  font-size: 2.4rem;
+}
+
+.logo .highlight {
+  color: black; 
+  font-weight: 700;
+}
+
+.p-bottom{
+  padding-left: 70px;
+}
+
+
+.app-links{
+  text-align: right;
+  top: -170px;
+  position: relative;
+}
+
+.bottom-img{
+  width: 50px;
+  height: 70px;
+}
+
