@@ -594,6 +594,7 @@ img {
     text-align: center;
     background-size: cover;
   }
+  
 
 
 
@@ -632,5 +633,40 @@ img {
     text-align: center;
     top: -70px;
     position: relative;
+  }
+}
+
+  .learnmores {
+    width: 90%;
+    max-width: 200px;
+    padding: 14px 20px;
+    border-radius: 8px;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    top: -170px;
+    position: relative;
+  }
+
+@media (max-width: 768px) {
+  .email-wrapper {
+    padding: 60px 20px;
+    margin: 50px;
+
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    width: 100% !important; /* Forces full-width adaptation */
+    padding: 50px 20px !important; /* Creates uniform spacing */
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    top: 50px;
   }
 }
