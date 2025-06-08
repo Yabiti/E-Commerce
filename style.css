@@ -99,6 +99,15 @@ a{
   font-size: 25px;
 }
 
+img {
+  max-width: unset; /* Prevents desktop shrinking */
+}
+
+.png, .images, .imagess {
+  width: auto;
+  height: auto;
+  display: inline-block;
+}
 
 .btn {
   padding: 10px 20px;
@@ -455,13 +464,6 @@ a{
   position: relative;
 }
 
-.png, .images, .imagess {
-  width: auto;
-  height: auto;
-  display: inline-block;
-  margin: unset;
-}
-
 .team1{
   padding: 10px;
   text-align: center;
@@ -593,9 +595,42 @@ a{
     background-size: cover;
   }
 
+
+
+  @media only screen and (max-width: 768px) {
+  .png, .images, .imagess {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .make, .card-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
   .png, .images, .imagess {
     width: 90%;
     height: auto;
     display: block;
     margin: 0 auto;
   }
+}
+
+@media only screen and (max-width: 768px) {
+  .learnmore {
+    width: 90%;
+    max-width: 200px;
+    padding: 14px 20px;
+    border-radius: 8px;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    top: -70px;
+    position: relative;
+  }
+}
