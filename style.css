@@ -3,11 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    max-width: 100%;
 }
 
 body{
     width: 100%;
     background-color:  #C0C0C0;
+    overflow-x: hidden;
 }
 
 html {
@@ -128,6 +130,7 @@ a{
   width: 200px;
   height: 300px;
   overflow: hidden;
+  object-fit: cover;
 }
 
 .image-container img {
@@ -138,6 +141,7 @@ a{
   height: 100%;
   object-fit: cover;
   transition: opacity 0.4s ease-in-out;
+  object-fit: cover;
 }
 
 .back-image {
@@ -451,6 +455,13 @@ a{
   position: relative;
 }
 
+.png, .images, .imagess {
+  width: auto;
+  height: auto;
+  display: inline-block;
+  margin: unset;
+}
+
 .team1{
   padding: 10px;
   text-align: center;
@@ -515,6 +526,7 @@ a{
   margin-top: -5px;
 }
 
+
 .logo .icon {
   font-size: 2.4rem;
 }
@@ -540,3 +552,50 @@ a{
   height: 70px;
 }
 
+@media (max-width: 768px) {
+    .logo {
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  #listitems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-right: 0;
+  }
+
+  header {
+    padding: 20px;
+  }
+  .hero-section {
+    height: auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .product-card {
+    width: 90%;
+    margin: 15px auto;
+  }
+}
+  .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  .repair {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    background-size: cover;
+  }
+
+  .png, .images, .imagess {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
