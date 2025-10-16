@@ -57,7 +57,7 @@ let visibleFeatured = 4;
 
 const featuredContainer = document.getElementById('product-container');
 const loadMoreButtons = document.querySelectorAll('#loadMore');
-const featuredLoadBtn = loadMoreButtons[0]; // First #loadMore button
+const featuredLoadBtn = loadMoreButtons[0];
 
 function renderFeaturedProducts() {
   featuredContainer.innerHTML = '';
