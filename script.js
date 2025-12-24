@@ -34,7 +34,7 @@ const featuredProducts = [
        id: 'jacket',
     },
     { title: 'Jordan',
-      frontImage: 'jordan-front.jpg',
+      frontImage: 'jo',
       backImage: 'jordan-back.jpg',
       stars: '★★★★★',
       price: '250$',
@@ -147,7 +147,7 @@ const newArrivals = [
     }
 ];
 
-let visibleArrival = 4;
+let visibleArrival = 3;
 
 const arrivalContainer = document.getElementById('arrival-container');
 const arrivalLoadBtn = document.getElementById('loadMoreArrival');
