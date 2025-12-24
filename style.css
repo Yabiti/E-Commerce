@@ -328,9 +328,9 @@ img {
   width: fit-content;
   cursor: pointer;
   border: none;
-  top: -130px;
+  top: -120px;
   position: relative;
-  margin-left: 80px;
+  margin-left: 60px;
 }
 
 .learnmore:hover {
