@@ -53,7 +53,7 @@ const featuredProducts = [
 ];
 
 
-let visibleFeatured = 4;
+let visibleFeatured = 3;
 
 const featuredContainer = document.getElementById('product-container');
 const loadMoreButtons = document.querySelectorAll('#loadMore');
